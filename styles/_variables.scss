@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Amatic+SC&family=Dorsa&family=Pacifico&family=Poppins:wght@200;400;700&display=swap');
+
+$background: #889CC0;
+$colorLight : white;
+$colorDark : #3C3E3E;
+$filtercolor: #889cc0b2;
+
+@mixin flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}

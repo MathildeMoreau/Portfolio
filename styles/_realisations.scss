@@ -1,0 +1,148 @@
+@mixin hoverImg{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  text-align: center;
+  color: $colorDark;
+  margin: 10%;
+}
+
+@mixin projects{
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+@mixin html{
+  color: red;
+  margin-right: 2rem;
+}
+
+@mixin css{
+  color: #1A6DB5;
+  margin-right: 2rem;
+}
+
+.realisations{
+  margin: 2rem;
+  .images-projets{
+    display: grid;
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, 45vh);
+    grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    grid-template-areas: 
+    "projet-asso projet-de"
+    "projet-reflexo .";
+    .open-link{
+      display: block;
+      height: 100%;
+      width: 100%;
+      text-decoration: none;
+    }
+    #projet-asso{
+      background: url(../images/projet-asso-lumieres.png);
+      @include projects;
+      grid-area: projet-asso;
+      animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      .techno, .items{
+        display: none;
+        transition: 0.5s;
+      }
+      &:hover{
+        background-image: linear-gradient($filtercolor, $filtercolor), url(../images/projet-asso-lumieres.png);
+        opacity: 0.5;
+        font-family: 'Poppins', cursive;
+        .techno{
+          @include hoverImg;
+          .items{
+            display: flex;
+            .fa-html5{
+              @include html;
+            }
+            .fa-css3-alt{
+              @include css;
+            }
+          }
+        }
+      }
+    }
+    #projet-de{
+      background: url(../images/projet-des.png);
+      @include projects;
+      grid-area: projet-de;
+      animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      .techno, .items{
+        display: none;
+        transition: 0.5s;
+      }
+      &:hover{
+        background-image: linear-gradient($filtercolor, $filtercolor), url(../images/projet-des.png);
+        opacity: 0.5;
+        font-family: 'Poppins', cursive;
+        .techno{
+          @include hoverImg;
+          .items{
+            display: flex;
+            .fa-html5{
+              @include html;
+            }
+            .fa-css3-alt{
+              @include css;
+            }
+            .fa-js-square{
+              color: yellow;
+            }
+          }
+        }
+      }
+
+    }
+    #projet-reflexo{
+      background: url(../images/projet-reflexo.png);
+      @include projects;
+      grid-area: projet-reflexo;
+      margin-bottom: 3rem;
+      animation: tilt-in-top-1 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+      .techno, .items{
+        display: none;
+        transition: 0.5s;
+      }
+      &:hover{
+        background-image: linear-gradient($filtercolor, $filtercolor), url(../images/projet-reflexo.png);
+        opacity: 0.5;
+        font-family: 'Poppins', cursive;
+        .techno{
+          @include hoverImg;
+          .items{
+            display: flex;
+            .fa-html5{
+              @include html;
+            }
+            .fa-css3-alt{
+              @include css;
+            }
+          }
+        }
+      }
+
+
+    }
+  }
+}
+
+@keyframes tilt-in-top-1 {
+  0% {
+    -webkit-transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+            transform: rotateY(30deg) translateY(-300px) skewY(-30deg);
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: rotateY(0deg) translateY(0) skewY(0deg);
+            transform: rotateY(0deg) translateY(0) skewY(0deg);
+    opacity: 1;
+  }
+}

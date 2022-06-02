@@ -1,0 +1,39 @@
+header{
+    background: $background;
+    width: 100vw;
+    nav{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        color: $colorLight;
+        .logo{
+            .firstname{
+                font-family: 'Amatic SC', cursive;
+                font-size: 6rem;
+                font-weight: lighter;
+                a{
+                    text-decoration: none;
+                    color: $colorLight;
+                }
+            }
+            .lastname{
+                font-family: 'Allura', cursive;
+                font-size: 6rem;
+            }
+        }
+        ul{
+            @include flex;
+            li{
+                list-style-type: none;
+                a{
+                    margin: 0 5rem;
+                    color: $colorLight;
+                    text-decoration: none;
+                    font-family: 'Pacifico', cursive;
+                    font-size: 2.5rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+@import 'variables';
+@import 'header';
+@import 'introduction';
+@import 'about';
+@import 'realisations';
+@import 'contact';
+@import 'footer';
+@import 'responsive';
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+h2{
+    font-family: 'Dorsa', sans-serif;
+    font-size: 8rem;
+    letter-spacing: 0.3rem;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2rem 0;
+}
+
+section{
+    margin-bottom: 2rem;
+}

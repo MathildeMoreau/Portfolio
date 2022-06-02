@@ -1,0 +1,27 @@
+footer{
+    width: 100vw;
+    background: $background;
+    color: $colorLight;
+    display: flex;
+    justify-content: space-around;
+    padding: 2rem;
+    font-size: 1.2rem;
+    font-family: 'Poppins', cursive;
+    font-style: italic;
+    .menu{
+        width: 50%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        a{
+            text-decoration: none;
+            color: $colorLight;
+            padding: 0.1rem;
+            
+        }
+    }
+    .copyright{
+        display: flex;
+        flex-wrap: wrap;
+    }
+}

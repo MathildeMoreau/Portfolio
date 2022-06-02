@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/0f548b3386.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <title>Developpeur Web | Mathilde Moreau Portfolio</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" id="logo">
+                <h1 class="firstname"><a href="#logo">Mathilde</a></h1>
+                <div class="lastname">Moreau</div>
+            </div>
+            <ul>
+                <li class="animate__animated animate__fadeInTopLeft"><a href="#about">A propos</a></li>
+                <li class="animate__animated animate__fadeInTopLeft"><a href="#realisations">Réalisations</a></li>
+                <li class="animate__animated animate__fadeInTopLeft"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="introduction">
+            <img src="./images/profile.jpg" alt="Photo Mathilde">
+            <div class="presentation">
+                <h3>Hello 👋</h3>
+                <h4>Je suis Mathilde Moreau, développeuse web full-stack</h4>
+                <a href="./CV - Mathilde.pdf" download="cv-mathilde-moreau.pdf"><i class="fa-solid fa-download"></i> Télécharger mon CV</a>
+            </div>
+        </section>
+        <section class="about" id="about">
+            <h2>A propos</h2>
+                <div class="about--content">
+                    <div class="about--text">
+                        <div class="about--title">
+                            <h3>Mon parcours</h3>
+                        </div>
+                        <div class="about--description">
+                            <p>Après un bac littéraire, j’ai démarré mes études supérieures par un BTS Assistant de Manager suivi ensuite d’un Bachelor en Tourisme et évènementiel, que j’ai suivi en alternance.
+                            </p>
+
+                            <p>
+                                A la suite de mon alternance, j’ai souhaité poursuivre dans le domaine de l’évènementiel, mais ne trouvant pas d’emploi, j’ai du trouver un petit boulot. 
+                            </p>
+                            <p>
+                                Ce qui m’a conduit par hasard dans le monde du transport routier, où je suis restée plus de 7 ans ! J’ai principalement excercée en tant qu’affréteuse nationale et internationale, un métier qui combine le commerce, le service client, la saisie, la maitrise de différentes langues et processus internationaux et bien d’autres. 
+                            </p>    
+                            <p>
+                                Mais après un confinement et une première maternité, j’ai eu envie de changement et le développement web m’est venu très naturellement. J’ai donc tout quitté pour me lancer dans une formation en ligne en solo pendant 10 mois avant de rejoindre une équipe réelle à Niort lors d’une POEC.
+                            </p>
+
+                                
+                        </div>
+                    </div>
+                    <div class="illustrations">
+                        <img src="./images/school.jpg" alt="school" class="drawings" id="school">
+                        <img src="./images/Curly Arrow.png" alt="arrow" class="arrow">
+                        <img src="./images/truck.jpg" alt="truck" class="drawings" id="truck">
+                        <img src="./images/Curly Arrow (1).png" alt="arrow" class="arrow">
+                        <img src="./images/code.jpg" alt="code" class="drawings" id="code">
+            
+                    </div>
+                </div>
+            </div>
+            <div>
+        </section>
+        <section class="realisations" id="realisations">
+            <h2>Realisations</h2>
+            <div class="images-projets">
+                <div class="projet-asso" id="projet-asso">
+                    <a href="https://associationfaiteslumieres.netlify.app/" target="_blank" class="open-link">
+                        <div class="techno">Technologies utilisées :
+                            <div class="items">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="projet-de" id="projet-de">
+                    <a href="https://100dicegame.netlify.app/" class="open-link" target="_blank">
+                        <div class="techno">Technologies utilisées :
+                            <div class="items">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                                <i class="fa-brands fa-js-square"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="projet-reflexo" id="projet-reflexo">
+                    <a href="https://www.madisson-reflexologie.com" target="_blank" class="open-link">
+                        <div class="techno">Technologies utilisées :
+                            <div class="items">
+                                <i class="fa-brands fa-html5"></i>
+                                <i class="fa-brands fa-css3-alt"></i>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contact" id="contact">
+            <h2>Contact</h2>
+            <div class="container">
+                <form action="">
+                    <div class="name form-group">
+                        <label for="name">Nom</label>
+                        <input type="text" name="name" id="name">
+                    </div>
+                    <div class="firstname form-group">
+                        <label for="firstname">Prénom</label>
+                        <input type="text" name="firstname" id="firstname">
+                    </div>
+                    <div class="email form-group">
+                        <label for="email">Mail</label>
+                        <input type="email" name="email" id="email">
+                    </div>
+                    <div class="message">
+                        <label for="message">Votre message</label>
+                        <textarea name="message" id="message"></textarea>
+                    </div>
+                    <button type="submit">Envoyer</button>
+                </form>
+                <div class="socials">
+                    <div class="mail social-group">
+                        <p>
+                            <a href="mailto:mathilde.moreau85@gmail.com" target="_blank">
+                                <i class="fa-solid fa-envelope"></i>
+                                mathilde.moreau85@gmail.com
+                            </a>
+                        </p>
+                    </div>
+                    <div class="linkedin social-group">
+                        <p>
+                            <a href="https://www.linkedin.com/in/mathilde-moreau-b98036b3/" target="_blank">
+                                <i class="fa-brands fa-linkedin"></i>
+                                LinkedIn
+                            </a>
+                        </p>
+                    </div>
+                    <div class="git social-group">
+                        <p>
+                            <a href="https://github.com/MathildeMoreau" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                            GitHub
+                            </a>
+                    </p>
+                    </div>
+                    <div class="location social-group">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Niort</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="menu">
+            <a href="#logo">Home</a>
+            <a href="#about">A propos</a>
+            <a href="#realisations">Realisations</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="copyright">
+            © - 2022 Mathilde Moreau
+        </div>
+    </footer>
+    
+</body>
+</html>

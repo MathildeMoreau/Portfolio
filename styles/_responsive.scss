@@ -1,0 +1,120 @@
+@media all and (max-width: 480px) {
+    header{
+        nav{
+            padding: 0;
+            flex-direction: column;
+            .logo{
+                .firstname{
+                    font-size: 3rem;
+                }
+                .lastname{
+                    font-size: 4rem;
+                }
+            }
+            ul{
+                flex-direction: column;
+                li{
+                    a{
+                        font-size: 1.5rem;
+                        margin: 0 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact{
+        .container{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            form{
+                width: 90vw;
+                padding: 10px;
+                .form-group{
+                    flex-direction: column;
+                }
+            }
+            .socials{
+                width: 100vw;
+                .social-group{
+                    flex-direction: row;
+                    justify-content: flex-start;
+                    margin: 0.5rem;
+                    p{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    footer{
+        .menu{
+            flex-direction: column;
+        }
+        .copyright{
+           align-self: center;
+        }
+    }
+ }
+
+ @media all and (max-width: 768px) {
+     .introduction{
+         img{
+             width: 50%;
+         }
+     }
+    .about{
+        .about--content{
+            flex-direction: column;
+            .about--text{
+                width: 100%;
+                height: 100%;
+                .about--title{
+                    padding: 0.5rem;
+                }
+            }
+            .illustrations{
+                margin-top: 2rem;
+                width: 100%;
+            }
+        }
+    }
+
+    .realisations{
+        margin: 0;
+        .images-projets{
+            grid-template-columns: 100vw;
+            grid-template-rows: repeat(3, 30vh);
+            grid-template-areas: 
+            "projet-asso"
+            "projet-de"
+            "projet-reflexo";
+            #projet-asso{
+                grid-area: projet-asso;
+                &:hover{
+                    .techno{
+                        font-size: rem;
+                    }
+                }
+            }
+            #projet-de{
+                grid-area: projet-de;
+                &:hover{
+                    .techno{
+                        font-size: 1rem;
+                    }
+                }
+            }
+            #projet-reflexo{
+                grid-area: projet-reflexo;
+                &:hover{
+                    .techno{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+ }
